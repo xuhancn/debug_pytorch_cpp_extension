@@ -14,9 +14,9 @@ PACKAGE_NAME = "only_add"
 start = time.time()
 print('!!!!!compiling start.')
 setup(
-    name='PACKAGE_NAME',
+    name=PACKAGE_NAME,
     ext_modules=[
-        CppExtension('PACKAGE_NAME', [
+        CppExtension(PACKAGE_NAME, [
             'src/only_add.cpp',
         ], extra_compile_args=[])
     ],

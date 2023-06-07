@@ -14,9 +14,9 @@ PACKAGE_NAME = "add_pybind"
 start = time.time()
 print('!!!!!compiling start.')
 setup(
-    name='PACKAGE_NAME',
+    name=PACKAGE_NAME,
     ext_modules=[
-        CppExtension('PACKAGE_NAME', [
+        CppExtension(PACKAGE_NAME, [
             'src/add_pybind.cpp',
         ], extra_compile_args=[])
     ],
